@@ -37,7 +37,9 @@ figure {
 
 /* Make the image responsive */
 figure img {
-  width: 100%; /* So that the image scales with the figure element */
+  border: 1px solid rgb(240,240,240);
+  display: block;
+  max-width: 100%
 }
 
 /* Media queries */

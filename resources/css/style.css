@@ -18,14 +18,14 @@ body {
   padding: 0 1rem;
 }
 
-h1 {
+.header__title {
   font-size: 2.5rem;
   font-weight: 700;
   padding: 0.5rem 0;
   text-align: right;
 }
 
-p {
+.header__subtitle {
   font-size: 1rem;
   padding: 0.2rem 0;
   text-align: right;
@@ -35,10 +35,7 @@ p {
   height: 1.4rem;
 }
 
-main {
-}
-
-a {
+.exhibition__work {
   color: inherit;
   display: block;
   margin: 0.5rem 0;
@@ -46,38 +43,38 @@ a {
 }
 
 /* Make sure the image size is set by its container. */
-figure {
+.thumbnail {
   overflow: hidden;
 }
 
 /* Make the image responsive */
-figure img {
+.thumbnail__image {
   border: 1px solid rgb(240,240,240);
   display: block;
   max-width: 100%
 }
 
-figcaption {
+.thumbnail__name {
   padding-top: 0.5rem;
   text-align: right;
 }
 
 /* Tablets */
 @media only screen and (min-width: 600px) {
-  section {
+  .exhibition {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  a {
+  .exhibition__work {
     width: calc(50% - 0.5rem);
   }
 }
 
 /* Desktops */
 @media only screen and (min-width: 1000px) {
-  a {
+  .exhibition__work {
     width: calc(100% / 3 - 0.5rem);
   }
 }

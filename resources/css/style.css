@@ -75,3 +75,9 @@ figcaption {
   }
 }
 
+/* Desktops */
+@media only screen and (min-width: 1000px) {
+  a {
+    width: calc(100% / 3 - 0.5rem);
+  }
+}

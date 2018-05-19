@@ -12,6 +12,21 @@ html {
 /* Base font family */
 body {
   font-family: 'Roboto', sans-serif;
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 0.5rem 0;
+  text-align: right;
+}
+
+p {
+  font-size: 1rem;
+  padding: 0.2rem 0;
+  text-align: right;
+}
+
+.logo {
+  height: 1.4rem;
 }
 
 /* Make sure the image size is set by its container. */

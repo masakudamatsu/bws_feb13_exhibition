@@ -15,30 +15,40 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
   max-width: 1200px;
-  padding: 0 1rem; /* Side margins */
+  padding: 1.4rem 1.5rem;
+  /* Side margins, larger than 1rem space between works, which makes works look related to each other as produced by the same cohort of students */
+  /* Top margin is slightly smaller than 1.5rem to make it look 1.5rem. The title text adds a small space above the text. */
 }
 
 .header__title {
   font-size: 2.5rem;
   font-weight: 700;
-  padding: 0.5rem 0;
+  padding-bottom: 0.5rem;
   text-align: right;
 }
 
 .header__subtitle {
   font-size: 1rem;
-  padding: 0.2rem 0;
+  padding-bottom: 0.5rem;
   text-align: right;
+}
+
+.header__subtitle--second {
+  padding-bottom: 0; /* Space above the exhibition section is regulated by .exhibition */
 }
 
 .logo {
   height: 1.4rem; /* So the rectangular box in the logo looks as high as the x-height of "Student Exhibition" */
 }
 
+.exhibition {
+  margin-top: 1rem; /* To be connected to the title */
+}
+
 .exhibition__work {
   color: inherit;
   display: block;
-  margin: 1.5rem 0;
+  margin-bottom: 1rem; /* To allow enough vertical space between works while keeping them integrated (because the space is narrower than side margins of 1.5rem) */
   text-decoration: none;
 }
 
@@ -55,7 +65,7 @@ body {
 }
 
 .thumbnail__name {
-  padding-top: 0.5rem;
+  padding-top: 0.5rem; /* To insert some space below the image, but not too large to make the name look separated from the image. */
   text-align: right;
 }
 
@@ -68,13 +78,13 @@ body {
     justify-content: space-between;
   }
   .exhibition__work {
-    width: calc(50% - 0.5rem);
+    width: calc((100% - 1rem) / 2); /* To create 1rem space between two works side by side */
   }
 }
 
 /* Desktops */
 @media only screen and (min-width: 1000px) {
   .exhibition__work {
-    width: calc(100% / 3 - 0.5rem);
+    width: calc((100% - 2rem) / 3); /* To create 1rem space between any pair of works side by side */
   }
 }

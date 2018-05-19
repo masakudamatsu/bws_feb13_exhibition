@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box; /* Allow the box size specified with border and padding inclusive */
+  margin: 0;              /* Reset the browser's default value */
+  padding: 0;             /* Reset the browser's default value */
+}
+
+/* Base font size to which the rem refers to */
+html {
+  font-size: 16px;
+}
+
+/* Base font family */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Make sure the image size is set by its container. */
+figure {
+  overflow: hidden;
+}
+
+/* Make the image responsive */
+figure img {
+  width: 100%; /* So that the image scales with the figure element */
+}
+
+/* Media queries */
+@media only screen and (max-width: 480px) {
+
+}

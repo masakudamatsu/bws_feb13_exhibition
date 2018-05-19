@@ -13,6 +13,11 @@ html {
 body {
   color: #204056; /* Same as CodeCademy's logo */
   font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
 h1 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -30,6 +35,16 @@ p {
   height: 1.4rem;
 }
 
+main {
+}
+
+a {
+  color: inherit;
+  display: block;
+  margin: 0.5rem 0;
+  text-decoration: none;
+}
+
 /* Make sure the image size is set by its container. */
 figure {
   overflow: hidden;
@@ -42,7 +57,9 @@ figure img {
   max-width: 100%
 }
 
-/* Media queries */
-@media only screen and (max-width: 480px) {
+figcaption {
+  padding-top: 0.5rem;
+  text-align: right;
+}
 
 }

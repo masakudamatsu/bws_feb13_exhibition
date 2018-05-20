@@ -69,6 +69,11 @@ body {
   text-align: right;
 }
 
+.footer {
+  line-height: 1.5;
+  max-width: 500px;
+}
+
 /* Tablets */
 @media only screen and (min-width: 600px) {
   .exhibition {
